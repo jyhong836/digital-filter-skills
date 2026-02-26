@@ -31,6 +31,8 @@ Per-source URLs, extraction guidance, and tool selection.
 **URL:** `https://github.com/<github-username>?tab=stars`
 **Auth required:** No — public page
 
+**Setup:** User must provide their GitHub username in `./memory/config.md` as `<github-username>`. The skill will substitute this value when constructing the URL.
+
 **Extraction:**
 - Fetch `https://github.com/<github-username>?tab=stars` (paginate via `?page=N` if needed)
 - For each starred repo extract:

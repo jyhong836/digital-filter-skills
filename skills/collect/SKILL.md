@@ -21,7 +21,13 @@ Sub-commands: `x-bookmarks` | `github` | `alphaxiv-lib` | `alphaxiv-rec`
 
 ### Step 0 - Setup
 
-For different sub-commands, extra setup may be required. See `./skills/collect/references/sources.md` for details.
+Check if `./memory/config.md` exists and contains the required placeholders for the requested sub-command. If not, prompt the user to provide the values and write them to `./memory/config.md`. The file should be formated as `references/example_config.md`.
+
+For different sub-commands, read essential args from `./memory/config.md`:
+- `<github-username>` for the `github` sub-command
+- `<alphaxiv-folder-id>` for the `alphaxiv-lib` sub-command
+
+If the file is missing or these values are missing, prompt the user to provide and then write to these files.
 
 ### Step 1 — Read state
 
